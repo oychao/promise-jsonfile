@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/ouyangcharles/git/DemoPlay/conf/routes
-// @DATE:Mon Jul 25 10:08:57 JST 2016
+// @DATE:Mon Jul 25 14:15:33 JST 2016
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }

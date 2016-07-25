@@ -75,7 +75,7 @@ Seq[Any](format.raw/*7.32*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Mon Jul 25 10:08:57 JST 2016
+                  DATE: Mon Jul 25 14:15:33 JST 2016
                   SOURCE: /Users/ouyangcharles/git/DemoPlay/app/views/main.scala.html
                   HASH: b2ef05838e523ed9b12d7d4674a701ad3115bd7a
                   MATRIX: 1002->260|1127->290|1155->292|1235->397|1271->406|1306->414|1332->419|1421->481|1436->487|1499->528|1587->589|1602->595|1663->634|1715->659|1730->665|1792->706|1886->862|1923->872|1951->879|1983->884
