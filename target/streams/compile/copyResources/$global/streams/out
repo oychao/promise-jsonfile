@@ -1,7 +1,0 @@
-[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/Users/ouyangcharles/Projects/IdeaWorkspace/DemoPlay/conf/application.conf,/Users/ouyangcharles/Projects/IdeaWorkspace/DemoPlay/target/scala-2.11/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/Users/ouyangcharles/Projects/IdeaWorkspace/DemoPlay/conf/evolutions,/Users/ouyangcharles/Projects/IdeaWorkspace/DemoPlay/target/scala-2.11/classes/evolutions)[0m
-[0m[[0mdebug[0m] [0m	(/Users/ouyangcharles/Projects/IdeaWorkspace/DemoPlay/conf/logback.xml,/Users/ouyangcharles/Projects/IdeaWorkspace/DemoPlay/target/scala-2.11/classes/logback.xml)[0m
-[0m[[0mdebug[0m] [0m	(/Users/ouyangcharles/Projects/IdeaWorkspace/DemoPlay/conf/routes,/Users/ouyangcharles/Projects/IdeaWorkspace/DemoPlay/target/scala-2.11/classes/routes)[0m
-[0m[[0mdebug[0m] [0m	(/Users/ouyangcharles/Projects/IdeaWorkspace/DemoPlay/conf/evolutions/default,/Users/ouyangcharles/Projects/IdeaWorkspace/DemoPlay/target/scala-2.11/classes/evolutions/default)[0m
-[0m[[0mdebug[0m] [0m	(/Users/ouyangcharles/Projects/IdeaWorkspace/DemoPlay/conf/evolutions/default/1.sql,/Users/ouyangcharles/Projects/IdeaWorkspace/DemoPlay/target/scala-2.11/classes/evolutions/default/1.sql)[0m
