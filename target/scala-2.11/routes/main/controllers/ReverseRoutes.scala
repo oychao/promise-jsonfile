@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/ouyangcharles/git/DemoPlay/conf/routes
-// @DATE:Mon Jul 25 14:15:33 JST 2016
+// @DATE:Tue Jul 26 15:59:54 JST 2016
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -12,36 +12,6 @@ import _root_.play.libs.F
 
 // @LINE:6
 package controllers {
-
-  // @LINE:10
-  class ReverseAsyncController(_prefix: => String) {
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:10
-    def message(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "message")
-    }
-  
-  }
-
-  // @LINE:6
-  class ReverseHomeController(_prefix: => String) {
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:6
-    def index(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix)
-    }
-  
-  }
 
   // @LINE:13
   class ReverseAssets(_prefix: => String) {
@@ -69,6 +39,96 @@ package controllers {
     def count(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "count")
+    }
+  
+  }
+
+  // @LINE:21
+  class ReverseUserController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:22
+    def save(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "user/save")
+    }
+  
+    // @LINE:23
+    def find(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "user/find")
+    }
+  
+    // @LINE:24
+    def findAll(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "user/findAll")
+    }
+  
+    // @LINE:21
+    def index(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "user/index")
+    }
+  
+  }
+
+  // @LINE:6
+  class ReverseHomeController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:6
+    def index(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix)
+    }
+  
+  }
+
+  // @LINE:10
+  class ReverseAsyncController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:10
+    def message(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "message")
+    }
+  
+  }
+
+  // @LINE:16
+  class ReverseFrameController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:17
+    def dashboard(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "dashboard")
+    }
+  
+    // @LINE:16
+    def frame(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "index")
+    }
+  
+    // @LINE:18
+    def statistics(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "statistics")
     }
   
   }

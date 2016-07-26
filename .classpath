@@ -4,11 +4,14 @@
 	<classpathentry kind="src" path="conf"/>
 	<classpathentry excluding="resources/" kind="src" path="test"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/play-enhancer/jars/play-enhancer-1.1.0.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar"/>
-	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/play-enhancer/jars/play-enhancer-1.1.0.jar"/>
-	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.4.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/play-ebean_2.11/jars/play-ebean_2.11-3.0.2.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.5.4.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.4.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.4.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.4.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.5.4.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.5.4.jar"/>
@@ -48,6 +51,11 @@
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.4.3.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.googlecode.usc/jdbcdslog/jars/jdbcdslog-1.0.6.2.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.h2database/h2/jars/h2-1.4.191.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.5.4.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.16.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.2.4.Final.jar"/>
@@ -63,6 +71,18 @@
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/net.jodah/typetools/bundles/typetools-0.4.4.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.1.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.33.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.11/jars/play-jdbc-evolutions_2.11-2.5.2.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-7.6.1.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.jetbrains/annotations/jars/annotations-13.0.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.avaje/avaje-datasource-api/jars/avaje-datasource-api-1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.21.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.avaje/avaje-datasource/jars/avaje-datasource-1.1.2.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-cluster/jars/avaje-ebeanorm-cluster-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.avaje/avaje-classpath-scanner-api/jars/avaje-classpath-scanner-api-2.1.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.avaje/avaje-classpath-scanner/jars/avaje-classpath-scanner-2.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.9.2.jar"/>
+	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.5.4.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.5.4.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.netty/netty-reactive-streams-http/jars/netty-reactive-streams-http-1.0.6.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.netty/netty-reactive-streams/jars/netty-reactive-streams-1.0.6.jar"/>
@@ -74,14 +94,6 @@
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/io.netty/netty-codec-http/jars/netty-codec-http-4.0.36.Final.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/io.netty/netty-transport-native-epoll/jars/netty-transport-native-epoll-4.0.36.Final-linux-x86_64.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/play-logback_2.11/jars/play-logback_2.11-2.5.4.jar"/>
-	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.5.4.jar"/>
-	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.5.4.jar"/>
-	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/jars/play-jdbc-api_2.11-2.5.4.jar"/>
-	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.4.3.jar"/>
-	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.googlecode.usc/jdbcdslog/jars/jdbcdslog-1.0.6.2.jar"/>
-	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.h2database/h2/jars/h2-1.4.191.jar"/>
-	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.5.4.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.5.4.jar"/>
@@ -89,7 +101,6 @@
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.asynchttpclient/async-http-client/jars/async-http-client-2.0.2.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.asynchttpclient/netty-resolver-dns/jars/netty-resolver-dns-2.0.2.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.asynchttpclient/netty-resolver/jars/netty-resolver-2.0.2.jar"/>
-	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.21.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.asynchttpclient/netty-codec-dns/jars/netty-codec-dns-2.0.2.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.20.0-GA.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar"/>
@@ -135,6 +146,7 @@
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.webbitserver/webbit/jars/webbit-0.4.14.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/io.netty/netty/bundles/netty-3.5.2.Final.jar"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/.ivy2/cache/org.seleniumhq.selenium/selenium-leg-rc/jars/selenium-leg-rc-2.48.2.jar"/>
+	<classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/Users/ouyangcharles/git/DemoPlay/target/scala-2.11/classes"/>
 	<classpathentry kind="output" path="bin"/>

@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="docs"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160725141531"/>
+		date="20160726150547"/>
 	<dependencies>
 		<module organisation="com.typesafe.play" name="play-omnidoc_2.11">
 			<revision name="2.5.4" status="release" pubdate="20160610130227" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/omnidoc" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
@@ -404,6 +404,43 @@
 				</artifacts>
 			</revision>
 		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.16" status="release" pubdate="20160212042603" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master, master(compile)" position="-1">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5199" time="0" location="/Users/ouyangcharles/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.16.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16.pom"/>
+				<evicted-by rev="1.7.19"/>
+				<caller organisation="com.typesafe.play" name="play_2.11" conf="compile, runtime" rev="1.7.19" rev-constraint-default="1.7.19" rev-constraint-dynamic="1.7.19" callerrev="2.5.4"/>
+				<caller organisation="org.slf4j" name="jcl-over-slf4j" conf="compile, runtime" rev="1.7.19" rev-constraint-default="1.7.19" rev-constraint-dynamic="1.7.19" callerrev="1.7.19"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="compile, runtime" rev="1.7.16" rev-constraint-default="1.7.16" rev-constraint-dynamic="1.7.16" callerrev="2.4.4"/>
+				<caller organisation="org.slf4j" name="jul-to-slf4j" conf="compile, runtime" rev="1.7.19" rev-constraint-default="1.7.19" rev-constraint-dynamic="1.7.19" callerrev="1.7.19"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.20" rev-constraint-default="1.7.20" rev-constraint-dynamic="1.7.20" callerrev="1.1.7"/>
+				<caller organisation="com.typesafe.play" name="play-netty-utils" conf="compile, runtime" rev="1.7.19" rev-constraint-default="1.7.19" rev-constraint-dynamic="1.7.19" callerrev="2.5.4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.7.19" status="release" pubdate="20160315063401" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, master(*)" position="13">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5199" time="0" location="/Users/ouyangcharles/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.19.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.19/slf4j-api-1.7.19.pom"/>
+				<caller organisation="com.typesafe.play" name="play_2.11" conf="compile, runtime" rev="1.7.19" rev-constraint-default="1.7.19" rev-constraint-dynamic="1.7.19" callerrev="2.5.4"/>
+				<caller organisation="org.slf4j" name="jcl-over-slf4j" conf="compile, runtime" rev="1.7.19" rev-constraint-default="1.7.19" rev-constraint-dynamic="1.7.19" callerrev="1.7.19"/>
+				<caller organisation="org.slf4j" name="jul-to-slf4j" conf="compile, runtime" rev="1.7.19" rev-constraint-default="1.7.19" rev-constraint-dynamic="1.7.19" callerrev="1.7.19"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="compile, runtime" rev="1.7.16" rev-constraint-default="1.7.16" rev-constraint-dynamic="1.7.16" callerrev="2.4.4"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.20" rev-constraint-default="1.7.20" rev-constraint-dynamic="1.7.20" callerrev="1.1.7"/>
+				<caller organisation="com.typesafe.play" name="play-netty-utils" conf="compile, runtime" rev="1.7.19" rev-constraint-default="1.7.19" rev-constraint-dynamic="1.7.19" callerrev="2.5.4"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="40743" time="0" location="/Users/ouyangcharles/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.19.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.19/slf4j-api-1.7.19.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.7.20" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.19"/>
+				<caller organisation="com.typesafe.play" name="play_2.11" conf="compile, runtime" rev="1.7.19" rev-constraint-default="1.7.19" rev-constraint-dynamic="1.7.19" callerrev="2.5.4"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.20" rev-constraint-default="1.7.20" rev-constraint-dynamic="1.7.20" callerrev="1.1.7"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="com.typesafe.play" name="twirl-api_2.11">
 			<revision name="1.1.1" status="release" pubdate="20150514130045" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/twirl" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
@@ -598,36 +635,6 @@
 					<artifact name="jul-to-slf4j" type="jar" ext="jar" status="no" details="" size="4597" time="0" location="/Users/ouyangcharles/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.19.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.19/jul-to-slf4j-1.7.19.jar"/>
 					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.slf4j" name="slf4j-api">
-			<revision name="1.7.19" status="release" pubdate="20160315063401" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, master(*)" position="13">
-				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
-				<metadata-artifact status="no" details="" size="5199" time="0" location="/Users/ouyangcharles/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.19.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.19/slf4j-api-1.7.19.pom"/>
-				<caller organisation="com.typesafe.play" name="play_2.11" conf="compile, runtime" rev="1.7.19" rev-constraint-default="1.7.19" rev-constraint-dynamic="1.7.19" callerrev="2.5.4"/>
-				<caller organisation="org.slf4j" name="jcl-over-slf4j" conf="compile, runtime" rev="1.7.19" rev-constraint-default="1.7.19" rev-constraint-dynamic="1.7.19" callerrev="1.7.19"/>
-				<caller organisation="org.slf4j" name="jul-to-slf4j" conf="compile, runtime" rev="1.7.19" rev-constraint-default="1.7.19" rev-constraint-dynamic="1.7.19" callerrev="1.7.19"/>
-				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="compile, runtime" rev="1.7.16" rev-constraint-default="1.7.16" rev-constraint-dynamic="1.7.16" callerrev="2.4.4"/>
-				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.20" rev-constraint-default="1.7.20" rev-constraint-dynamic="1.7.20" callerrev="1.1.7"/>
-				<caller organisation="com.typesafe.play" name="play-netty-utils" conf="compile, runtime" rev="1.7.19" rev-constraint-default="1.7.19" rev-constraint-dynamic="1.7.19" callerrev="2.5.4"/>
-				<artifacts>
-					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="40743" time="0" location="/Users/ouyangcharles/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.19.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.19/slf4j-api-1.7.19.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-			<revision name="1.7.16" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
-				<evicted-by rev="1.7.19"/>
-				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="compile, runtime" rev="1.7.16" rev-constraint-default="1.7.16" rev-constraint-dynamic="1.7.16" callerrev="2.4.4"/>
-				<artifacts>
-				</artifacts>
-			</revision>
-			<revision name="1.7.20" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
-				<evicted-by rev="1.7.19"/>
-				<caller organisation="com.typesafe.play" name="play_2.11" conf="compile, runtime" rev="1.7.19" rev-constraint-default="1.7.19" rev-constraint-dynamic="1.7.19" callerrev="2.5.4"/>
-				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.20" rev-constraint-default="1.7.20" rev-constraint-dynamic="1.7.20" callerrev="1.1.7"/>
-				<artifacts>
 				</artifacts>
 			</revision>
 		</module>
