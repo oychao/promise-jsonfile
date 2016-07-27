@@ -1,0 +1,17 @@
+@* modify Template File *@
+@(user: models.User)
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form action='/user/modify' method='post'>
+<input type='hidden' name='id' value='@user.id'>
+<input type='text' name='username' placeholder='Username' value='@user.username' /><br/>
+<input type='text' name='email' placeholder='Email' value='@user.email' /><br />
+<input type='number' name='age' placeholder='Age' value='@user.age' /><br />
+<input type='submit'>
+</form>
+</body>
+</html>

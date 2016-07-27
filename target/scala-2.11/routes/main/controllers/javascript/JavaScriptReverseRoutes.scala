@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/ouyangcharles/git/DemoPlay/conf/routes
-// @DATE:Tue Jul 26 15:59:54 JST 2016
+// @DATE:Tue Jul 26 18:39:12 JST 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -63,12 +63,32 @@ package controllers.javascript {
     }
 
   
-    // @LINE:22
-    def save: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.UserController.save",
+    // @LINE:26
+    def delete: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserController.delete",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "user/delete/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0)})
+        }
+      """
+    )
+  
+    // @LINE:27
+    def pageModify: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserController.pageModify",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "user/formModify/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0)})
+        }
+      """
+    )
+  
+    // @LINE:25
+    def findSome: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserController.findSome",
       """
         function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "user/save"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "user/findSome"})
         }
       """
     )
@@ -83,6 +103,16 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:28
+    def modify: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserController.modify",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "user/modify"})
+        }
+      """
+    )
+  
     // @LINE:24
     def findAll: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserController.findAll",
@@ -93,12 +123,22 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:22
+    def save: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserController.save",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "user/save"})
+        }
+      """
+    )
+  
     // @LINE:21
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserController.index",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "user/index"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "user/formSave"})
         }
       """
     )

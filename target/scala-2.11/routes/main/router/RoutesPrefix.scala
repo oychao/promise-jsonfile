@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/ouyangcharles/git/DemoPlay/conf/routes
-// @DATE:Tue Jul 26 15:59:54 JST 2016
+// @DATE:Tue Jul 26 18:39:12 JST 2016
 
 
 package router {

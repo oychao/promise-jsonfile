@@ -3,22 +3,26 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET    /               controllers.HomeController.index
+GET    /                      controllers.HomeController.index
 # An example controller showing how to use dependency injection
-GET    /count          controllers.CountController.count
+GET    /count                 controllers.CountController.count
 # An example controller showing how to write asynchronous code
-GET    /message        controllers.AsyncController.message
+GET    /message               controllers.AsyncController.message
 
 # Map static resources from the /public folder to the /assets URL path
-GET    /assets/*file   controllers.Assets.versioned(path="/public", file: Asset)
+GET    /assets/*file          controllers.Assets.versioned(path="/public", file: Asset)
 
 # Frame Mapping Info
-GET    /index          controllers.FrameController.frame()
-GET    /dashboard      controllers.FrameController.dashboard()
-GET    /statistics     controllers.FrameController.statistics()
+GET    /index                 controllers.FrameController.frame()
+GET    /dashboard             controllers.FrameController.dashboard()
+GET    /statistics            controllers.FrameController.statistics()
 
 # User Mapping Info
-GET    /user/index     controllers.UserController.index()
-POST   /user/save      controllers.UserController.save()
-GET    /user/find      controllers.UserController.find()
-GET    /user/findAll   controllers.UserController.findAll()
+GET    /user/formSave         controllers.UserController.index()
+POST   /user/save             controllers.UserController.save()
+GET    /user/find             controllers.UserController.find()
+GET    /user/findAll          controllers.UserController.findAll()
+GET    /user/findSome         controllers.UserController.findSome()
+GET    /user/delete/:id       controllers.UserController.delete(id:Long)
+GET    /user/formModify/:id   controllers.UserController.pageModify(id:Long)
+POST   /user/modify           controllers.UserController.modify()

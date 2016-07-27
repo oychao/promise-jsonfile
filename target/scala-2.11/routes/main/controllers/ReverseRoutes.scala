@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/ouyangcharles/git/DemoPlay/conf/routes
-// @DATE:Tue Jul 26 15:59:54 JST 2016
+// @DATE:Tue Jul 26 18:39:12 JST 2016
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -50,10 +50,22 @@ package controllers {
     }
 
   
-    // @LINE:22
-    def save(): Call = {
+    // @LINE:26
+    def delete(id:Long): Call = {
       import ReverseRouteContext.empty
-      Call("POST", _prefix + { _defaultPrefix } + "user/save")
+      Call("GET", _prefix + { _defaultPrefix } + "user/delete/" + implicitly[PathBindable[Long]].unbind("id", id))
+    }
+  
+    // @LINE:27
+    def pageModify(id:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "user/formModify/" + implicitly[PathBindable[Long]].unbind("id", id))
+    }
+  
+    // @LINE:25
+    def findSome(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "user/findSome")
     }
   
     // @LINE:23
@@ -62,16 +74,28 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "user/find")
     }
   
+    // @LINE:28
+    def modify(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "user/modify")
+    }
+  
     // @LINE:24
     def findAll(): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "user/findAll")
     }
   
+    // @LINE:22
+    def save(): Call = {
+      import ReverseRouteContext.empty
+      Call("POST", _prefix + { _defaultPrefix } + "user/save")
+    }
+  
     // @LINE:21
     def index(): Call = {
       import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "user/index")
+      Call("GET", _prefix + { _defaultPrefix } + "user/formSave")
     }
   
   }

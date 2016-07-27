@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/ouyangcharles/git/DemoPlay/conf/routes
-// @DATE:Tue Jul 26 15:59:54 JST 2016
+// @DATE:Tue Jul 26 18:39:12 JST 2016
 
 package router
 
@@ -66,10 +66,14 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """index""", """controllers.FrameController.frame()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """dashboard""", """controllers.FrameController.dashboard()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """statistics""", """controllers.FrameController.statistics()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """user/index""", """controllers.UserController.index()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """user/formSave""", """controllers.UserController.index()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """user/save""", """controllers.UserController.save()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """user/find""", """controllers.UserController.find()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """user/findAll""", """controllers.UserController.findAll()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """user/findSome""", """controllers.UserController.findSome()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """user/delete/""" + "$" + """id<[^/]+>""", """controllers.UserController.delete(id:Long)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """user/formModify/""" + "$" + """id<[^/]+>""", """controllers.UserController.pageModify(id:Long)"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """user/modify""", """controllers.UserController.modify()"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -198,7 +202,7 @@ class Routes(
 
   // @LINE:21
   private[this] lazy val controllers_UserController_index7_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("user/index")))
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("user/formSave")))
   )
   private[this] lazy val controllers_UserController_index7_invoker = createInvoker(
     UserController_4.index(),
@@ -209,7 +213,7 @@ class Routes(
       Nil,
       "GET",
       """ User Mapping Info""",
-      this.prefix + """user/index"""
+      this.prefix + """user/formSave"""
     )
   )
 
@@ -261,6 +265,74 @@ class Routes(
       "GET",
       """""",
       this.prefix + """user/findAll"""
+    )
+  )
+
+  // @LINE:25
+  private[this] lazy val controllers_UserController_findSome11_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("user/findSome")))
+  )
+  private[this] lazy val controllers_UserController_findSome11_invoker = createInvoker(
+    UserController_4.findSome(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.UserController",
+      "findSome",
+      Nil,
+      "GET",
+      """""",
+      this.prefix + """user/findSome"""
+    )
+  )
+
+  // @LINE:26
+  private[this] lazy val controllers_UserController_delete12_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("user/delete/"), DynamicPart("id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_UserController_delete12_invoker = createInvoker(
+    UserController_4.delete(fakeValue[Long]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.UserController",
+      "delete",
+      Seq(classOf[Long]),
+      "GET",
+      """""",
+      this.prefix + """user/delete/""" + "$" + """id<[^/]+>"""
+    )
+  )
+
+  // @LINE:27
+  private[this] lazy val controllers_UserController_pageModify13_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("user/formModify/"), DynamicPart("id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_UserController_pageModify13_invoker = createInvoker(
+    UserController_4.pageModify(fakeValue[Long]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.UserController",
+      "pageModify",
+      Seq(classOf[Long]),
+      "GET",
+      """""",
+      this.prefix + """user/formModify/""" + "$" + """id<[^/]+>"""
+    )
+  )
+
+  // @LINE:28
+  private[this] lazy val controllers_UserController_modify14_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("user/modify")))
+  )
+  private[this] lazy val controllers_UserController_modify14_invoker = createInvoker(
+    UserController_4.modify(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.UserController",
+      "modify",
+      Nil,
+      "POST",
+      """""",
+      this.prefix + """user/modify"""
     )
   )
 
@@ -331,6 +403,30 @@ class Routes(
     case controllers_UserController_findAll10_route(params) =>
       call { 
         controllers_UserController_findAll10_invoker.call(UserController_4.findAll())
+      }
+  
+    // @LINE:25
+    case controllers_UserController_findSome11_route(params) =>
+      call { 
+        controllers_UserController_findSome11_invoker.call(UserController_4.findSome())
+      }
+  
+    // @LINE:26
+    case controllers_UserController_delete12_route(params) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_UserController_delete12_invoker.call(UserController_4.delete(id))
+      }
+  
+    // @LINE:27
+    case controllers_UserController_pageModify13_route(params) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_UserController_pageModify13_invoker.call(UserController_4.pageModify(id))
+      }
+  
+    // @LINE:28
+    case controllers_UserController_modify14_route(params) =>
+      call { 
+        controllers_UserController_modify14_invoker.call(UserController_4.modify())
       }
   }
 }

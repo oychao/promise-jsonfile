@@ -1,11 +1,11 @@
 
-package views.html
+package user.views.html
 
 import play.twirl.api._
 import play.twirl.api.TemplateMagic._
 
 
-     object demo_Scope0 {
+     object save_Scope0 {
 import models._
 import controllers._
 import play.api.i18n._
@@ -21,18 +21,17 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class demo extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[Any,play.twirl.api.HtmlFormat.Appendable] {
+class save extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[Any,play.twirl.api.HtmlFormat.Appendable] {
 
-  /* demo Template File */
+  /* save Template File */
   def apply/*2.2*/(param: Any):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
-import helper._
+
 
 Seq[Any](format.raw/*2.14*/("""
 
-"""),format.raw/*5.1*/("""
-"""),format.raw/*6.1*/("""<!DOCTYPE html>
+"""),format.raw/*4.1*/("""<!DOCTYPE html>
 <html>
 <head>
 </head>
@@ -60,15 +59,15 @@ Seq[Any](format.raw/*2.14*/("""
 
 }
 
-/* demo Template File */
-object demo extends demo_Scope0.demo
+/* save Template File */
+object save extends save_Scope0.save
               /*
                   -- GENERATED --
-                  DATE: Tue Jul 26 15:54:15 JST 2016
-                  SOURCE: /Users/ouyangcharles/git/DemoPlay/app/views/demo.scala.html
-                  HASH: c0c1f28a0eae06d3eda55aa442a675627d95ca0d
-                  MATRIX: 760->26|882->38|910->57|937->58
-                  LINES: 27->2|32->2|34->5|35->6
+                  DATE: Tue Jul 26 18:28:01 JST 2016
+                  SOURCE: /Users/ouyangcharles/git/DemoPlay/app/user/views/save.scala.html
+                  HASH: 978b2e25d0e45d743ac42a4323afa73ce3254cfd
+                  MATRIX: 765->26|872->38|900->40
+                  LINES: 27->2|32->2|34->4
                   -- GENERATED --
               */
           
