@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/ouyangcharles/git/DemoPlay/conf/routes
-// @DATE:Tue Jul 26 18:39:12 JST 2016
+// @DATE:Fri Jul 29 13:39:32 JST 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -15,7 +15,7 @@ import _root_.play.libs.F
 package controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:13
+  // @LINE:6
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -23,7 +23,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:13
+    // @LINE:6
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -35,27 +35,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:8
-  class ReverseCountController(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:8
-    def count: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.CountController.count",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "count"})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:21
+  // @LINE:9
   class ReverseUserController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -63,7 +43,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:26
+    // @LINE:14
     def delete: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserController.delete",
       """
@@ -73,7 +53,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:27
+    // @LINE:15
     def pageModify: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserController.pageModify",
       """
@@ -83,7 +63,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:25
+    // @LINE:13
     def findSome: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserController.findSome",
       """
@@ -93,7 +73,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:23
+    // @LINE:11
     def find: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserController.find",
       """
@@ -103,7 +83,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:28
+    // @LINE:16
     def modify: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserController.modify",
       """
@@ -113,7 +93,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:24
+    // @LINE:12
     def findAll: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserController.findAll",
       """
@@ -123,7 +103,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:22
+    // @LINE:10
     def save: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserController.save",
       """
@@ -133,7 +113,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:21
+    // @LINE:9
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserController.index",
       """
@@ -145,80 +125,30 @@ package controllers.javascript {
   
   }
 
-  // @LINE:6
-  class ReverseHomeController(_prefix: => String) {
+  // @LINE:19
+  class ReverseWebSocketController(_prefix: => String) {
 
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:6
+    // @LINE:20
+    def ws: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.WebSocketController.ws",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "ws"})
+        }
+      """
+    )
+  
+    // @LINE:19
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.index",
+      "controllers.WebSocketController.index",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + """"})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:10
-  class ReverseAsyncController(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:10
-    def message: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.AsyncController.message",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "message"})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:16
-  class ReverseFrameController(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:17
-    def dashboard: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.FrameController.dashboard",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "dashboard"})
-        }
-      """
-    )
-  
-    // @LINE:16
-    def frame: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.FrameController.frame",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "index"})
-        }
-      """
-    )
-  
-    // @LINE:18
-    def statistics: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.FrameController.statistics",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "statistics"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "v_ws"})
         }
       """
     )

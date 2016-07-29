@@ -1,5 +1,5 @@
 
-package user.views.html
+package views.html
 
 import play.twirl.api._
 import play.twirl.api.TemplateMagic._
@@ -63,10 +63,10 @@ Seq[Any](format.raw/*2.14*/("""
 object save extends save_Scope0.save
               /*
                   -- GENERATED --
-                  DATE: Tue Jul 26 18:28:01 JST 2016
-                  SOURCE: /Users/ouyangcharles/git/DemoPlay/app/user/views/save.scala.html
+                  DATE: Fri Jul 29 13:39:32 JST 2016
+                  SOURCE: /Users/ouyangcharles/git/DemoPlay/app/views/save.scala.html
                   HASH: 978b2e25d0e45d743ac42a4323afa73ce3254cfd
-                  MATRIX: 765->26|872->38|900->40
+                  MATRIX: 760->26|867->38|895->40
                   LINES: 27->2|32->2|34->4
                   -- GENERATED --
               */

@@ -1,5 +1,5 @@
 
-package user.views.html
+package views.html
 
 import play.twirl.api._
 import play.twirl.api.TemplateMagic._
@@ -64,10 +64,10 @@ Seq[Any](format.raw/*2.21*/("""
 object modify extends modify_Scope0.modify
               /*
                   -- GENERATED --
-                  DATE: Tue Jul 26 18:43:30 JST 2016
-                  SOURCE: /Users/ouyangcharles/git/DemoPlay/app/user/views/modify.scala.html
+                  DATE: Fri Jul 29 13:39:32 JST 2016
+                  SOURCE: /Users/ouyangcharles/git/DemoPlay/app/views/modify.scala.html
                   HASH: 2fa9cdaa6f571faa7d633cc8235bea2450f4fba9
-                  MATRIX: 779->28|893->47|921->49|1075->176|1088->180|1112->183|1208->252|1221->256|1251->265|1348->335|1361->339|1388->345|1484->414|1497->418|1522->422
+                  MATRIX: 774->28|888->47|916->49|1070->176|1083->180|1107->183|1203->252|1216->256|1246->265|1343->335|1356->339|1383->345|1479->414|1492->418|1517->422
                   LINES: 27->2|32->2|34->4|40->10|40->10|40->10|41->11|41->11|41->11|42->12|42->12|42->12|43->13|43->13|43->13
                   -- GENERATED --
               */
