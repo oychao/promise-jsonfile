@@ -1,3 +1,3 @@
-# DemoPlay
+# promise-jsonfile
 
-Demo project for Play Framework
+Read and handle JSON file with Promise
