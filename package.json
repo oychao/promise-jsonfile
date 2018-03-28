@@ -1,0 +1,8 @@
+{
+  "name": "promise-jsonfile",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/oychao/promise-jsonfile.git",
+  "author": "chao <chao@ouyang.io>",
+  "license": "WTFPL"
+}
