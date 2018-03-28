@@ -4,5 +4,13 @@
   "main": "index.js",
   "repository": "https://github.com/oychao/promise-jsonfile.git",
   "author": "chao <chao@ouyang.io>",
-  "license": "WTFPL"
+  "license": "WTFPL",
+  "scripts": {
+    "test": "mocha --require intelli-espower-loader 'test/**/*.test.js'"
+  },
+  "devDependencies": {
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^5.0.5",
+    "power-assert": "^1.4.4"
+  }
 }
