@@ -8,7 +8,6 @@ export default [{
     external: [
         'fs',
         'path',
-        'mkdirp',
         'jsonfile',
     ],
 },];
