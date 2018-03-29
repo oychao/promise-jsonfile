@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "fix": "eslint . --fix --ext .js,.jsx",
     "test": "mocha --require intelli-espower-loader 'test/**/*.test.js'",
-    "postinstall": "npm run build"
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
