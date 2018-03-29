@@ -5,6 +5,12 @@
   "repository": "https://github.com/oychao/promise-jsonfile.git",
   "author": "chao <chao@ouyang.io>",
   "license": "WTFPL",
+  "keywords": [
+    "promise",
+    "json",
+    "file",
+    "jsonfile"
+  ],
   "scripts": {
     "build": "rollup -c",
     "lint": "eslint .",

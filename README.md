@@ -1,8 +1,8 @@
 # promise-jsonfile
 
-[![Build Status](https://travis-ci.org/oychao/promise-jsonfile.svg?branch=master)](https://travis-ci.org/oychao/promise-jsonfile)
-
 Read and write JSON file with Promise.
+
+[![Build Status](https://travis-ci.org/oychao/promise-jsonfile.svg?branch=master)](https://travis-ci.org/oychao/promise-jsonfile)
 
 This library is derived from [node-jsonfile][1].
 
