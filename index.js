@@ -5,6 +5,7 @@ const read = (file, option) => {
         fs.readFile(file, option, (err, data) => {
             if (err) {
                 reject(err);
+                return;
             }
             data = JSON.parse(stripBom(data));
             resolve(data);
@@ -20,8 +21,10 @@ const write = (file, data, option) => {
             }
             data = JSON.stringify(data);
             fs.writeFile(file, data, option, fileErr => {
+                console.log(fileErr);
                 if (fileErr) {
                     reject(fileErr);
+                    return;
                 }
                 resolve();
             });
@@ -39,3 +42,4 @@ function stripBom(content) {
 }
 
 export default { read, write, };
+
