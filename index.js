@@ -21,7 +21,6 @@ const write = (file, data, option) => {
             }
             data = JSON.stringify(data);
             fs.writeFile(file, data, option, fileErr => {
-                console.log(fileErr);
                 if (fileErr) {
                     reject(fileErr);
                     return;
