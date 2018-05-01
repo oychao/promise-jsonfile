@@ -1,6 +1,6 @@
 {
   "name": "promise-jsonfile",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "./dist/bundle.js",
   "repository": "https://github.com/oychao/promise-jsonfile.git",
   "author": "chao <chao@ouyang.io>",
