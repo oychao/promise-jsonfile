@@ -1,33 +1,25 @@
 {
-  "name": "promise-jsonfile",
-  "version": "1.1.0",
+  "name": "demo",
+  "version": "1.0.0",
   "main": "./bin/index.js",
   "typings": "./bin/index.d.ts",
   "author": {
-    "name": "ouyang-chao",
-    "email": "chao@ouyang.io"
+    "name": "your name",
+    "email": "your@email.com"
   },
-  "license": "WTFPL",
-  "repository": "https://github.com/oychao/promise-jsonfile",
-  "keywords": [
-    "promise",
-    "json",
-    "file",
-    "jsonfile"
-  ],
-  "description": "Read and write JSON file with Promise",
+  "license": "MIT",
+  "repository": "https://github.com/your/package/address",
+  "keywords": [],
+  "description": "A npm package",
   "files": [
     "LICENSE.md",
     "README.md",
     "bin/"
   ],
   "scripts": {
-    "build": "rollup -c",
-    "test": "mocha --require babel-register test/**/*.spec.js",
-    "prepare": "npm run build"
+    "build": "tsc ./src/index.ts --outDir ./bin"
   },
   "devDependencies": {
-    "@types/node": "^10.12.0",
     "babel-core": "^6.26.3",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "babel-preset-env": "^1.7.0",
@@ -40,5 +32,7 @@
     "sinon": "^6.1.3",
     "typescript": "^2.9.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "promise-jsonfile": "file:../"
+  }
 }
