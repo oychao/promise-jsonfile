@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 
-const read = (file: string, option: object) => {
+const read = (file: string, option?: object) => {
   return new Promise((resolve, reject) => {
     fs.readFile(file, option, (err, data) => {
       if (err) {
@@ -13,7 +13,7 @@ const read = (file: string, option: object) => {
   });
 };
 
-const write = (file: string, data: object, option: object) => {
+const write = (file: string, data: object, option?: object) => {
   return new Promise((resolve, reject) => {
     try {
       if (typeof data !== 'object') {
