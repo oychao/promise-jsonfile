@@ -1,5 +1,5 @@
-import * as path from 'path';
-import jsonfile from 'promise-jsonfile';
+const path = require('path');
+const jsonfile = require('promise-jsonfile');
 
 jsonfile
   .read(path.resolve(__dirname, 'data.json'))
@@ -21,3 +21,11 @@ jsonfile
   .catch(err => {
     throw err;
   });
+
+const copyJsonFile = function(i: string, o: string): Promise<any> {
+  return jsonfile
+    .read(path.resolve(__dirname, i))
+    .then(data => jsonfile.write(path.resolve(__dirname, o), data));
+};
+
+copyJsonFile('data.json', 'data2.json');
