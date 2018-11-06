@@ -8,6 +8,8 @@ This library is derived from [node-jsonfile][1].
 
 ## How to use
 
+Typescript supported, check the [demo][2].
+
 ### Installation
 
 ```bash
@@ -20,21 +22,27 @@ npm install promise-jsonfile --save
 import jsonfile from 'promise-jsonfile';
 
 // read file
-jsonfile.read('./your/file/path.json').then(jsonData => {
+jsonfile
+  .read('./your/file/path.json')
+  .then(jsonData => {
     // do something
-}).catch(err => {
+  })
+  .catch(err => {
     throw err;
-});
+  });
 
 // write file
-jsonfile.write('./your/output/path.json', {
+jsonfile
+  .write('./your/output/path.json', {
     your: 'json',
-    data: 'here',
-}).then(() => {
+    data: 'here'
+  })
+  .then(() => {
     // do something
-}).cathc(err => {
+  })
+  .cathc(err => {
     throw err;
-});
+  });
 ```
 
 ## Licence
@@ -42,3 +50,4 @@ jsonfile.write('./your/output/path.json', {
 [![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png)](http://www.wtfpl.net/)
 
 [1]: https://github.com/jprichardson/node-jsonfile
+[2]: https://github.com/oychao/promise-jsonfile/tree/master/demo
