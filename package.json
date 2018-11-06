@@ -19,7 +19,8 @@
   "files": [
     "LICENSE.md",
     "README.md",
-    "bin/"
+    "bin/",
+    "src/"
   ],
   "scripts": {
     "build": "rollup -c",
