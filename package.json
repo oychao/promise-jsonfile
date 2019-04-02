@@ -1,13 +1,13 @@
 {
   "name": "promise-jsonfile",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "./bin/index.js",
   "typings": "./bin/index.d.ts",
   "author": {
     "name": "ouyang-chao",
     "email": "chao@ouyang.io"
   },
-  "license": "WTFPL",
+  "license": "Anti-996",
   "repository": "https://github.com/oychao/promise-jsonfile",
   "keywords": [
     "promise",
