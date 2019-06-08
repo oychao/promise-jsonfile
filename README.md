@@ -2,7 +2,7 @@
 
 Read and write JSON file with Promise.
 
-[![Build Status](https://travis-ci.org/oychao/promise-jsonfile.svg?branch=master)](https://travis-ci.org/oychao/promise-jsonfile)
+[![Build Status](https://travis-ci.org/oychao/promise-jsonfile.svg?branch=master)](https://travis-ci.org/oychao/promise-jsonfile) [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
 This library is derived from [node-jsonfile][1].
 
@@ -47,7 +47,7 @@ jsonfile
 
 ## Licence
 
-[![](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png)](http://www.wtfpl.net/)
+[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 [1]: https://github.com/jprichardson/node-jsonfile
 [2]: https://github.com/oychao/promise-jsonfile/tree/master/demo
